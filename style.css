@@ -127,8 +127,6 @@ h1 {
    line-height: 120px;
    margin-top: 7%;
 }
-
-
 #read {
    margin-top: 6%;
    padding: 1%;
@@ -282,7 +280,9 @@ h1 {
    padding-left: 1%;
    border-left: solid 1px;
 }
-
+.special-quote{
+   color:#d8d82d;
+}
 .special-quote , .quote {
    font-size: x-large;
    animation: fadeIn 2s ease forwards;
@@ -376,258 +376,199 @@ hr {
 
 
 
-@media only screen and (max-width:750px) {
-.home{
-
-   line-height: 3;
+@media only screen and (max-width:430px) {
+  body{
+   font-size: small;
+  }
+  .home h1{
+   font-size: 45px;
+  }
+   .home h2 {
+   width: 100vw;
+   line-height: 160%;
+   height: 10vh;
+      margin-top: 17%;
+      font-size: 25px;
+   
+   }
+   #read {
+      margin-top: 15%;
+      padding: 4%;
+      font-size: large;
+      border: none;
+      cursor: pointer;
+      border-radius: 25px;
+   }
+   .special-quote{
+      margin-top: 50%;
+      color: #d8d82d;
+   }
+   
+#menu {
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 55%;
 }
-.home h1 {
-  
-   font-size: 15px;
-   animation: fadeIn 2s ease forwards;
+#menu nav a{
+   font-size: 20px;
 }
-.home h2{
-   font-size: 5px;
-}
-h2{
-   font-size: 10px;
-  
-}
-.header {
-   padding-top: 2.5%;
+#menu nav {
    display: flex;
-   justify-content: space-between;
-   color: white;
-   font-size: 15px;
-   background-color: #0D1B2A;
-}
-.header div:not(:nth-child(3)){
-   margin-top: 1.5%;
-}
-
-.home h2 {
-
-   margin-top: 7%;
-   font-size: 25px;
-
-}
-
-#read {
-   margin-top: 20%;
-   padding: 3%;
-   font-size: medium;
-   border: none;
-   cursor: pointer;
-   border-radius: 25px;
+   flex-direction: column;
+   align-items: center;
 }
 #menu-button {
    font-size: 20px;
-   cursor: pointer;
-   background: none;
-   border: none;
-   color: white;
-   z-index: 1001;
-   position: relative;
+
 }
-.special-quote{
-   font-size: 20px;
+.why-this-title {
+   margin-top: 4%;
+   padding: 1%;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   border-top: solid 1px #7B3F00;
+   border-bottom: solid 1px #7B3F00;
 }
-   #menu nav a {
-      color: #0D1B2A;
-      text-decoration: none;
-      font-size: 0.6rem;
-      margin: 20px 0;
-      transition: color 0.3s ease;
-   }
-   .why-this-title {
-      margin-top: 4%;
-      padding: 1%;
-      height: 70vh;
+.why-this-title-content h1{
+   height: 5vh;
+   font-size: xx-large;
+   width: 90vw;
+   height: 6vh;
+ }
+
+ .why-this-title-content{
+    font-size: small;
+      height: 50vh;
       width: 100vw;
-      display: flex;
-      flex-direction: column;
-      border-top: solid 1px #7B3F00;
-      border-bottom: solid 1px #7B3F00;
+ }
+ .why-this-title-content p{
+   font-size: medium;
+   width: 95vw;
+     height: 40vh;
+}
+.why-this-title img {
+   width: 75vw;
+   height: 30vh;
+}
+.personal-blog {
+   width: 100%;
+   display: flex;
+ flex-direction: column;
+}
+.navigation {
+   margin: 1%;
+   width: 100%;
+   text-align: center;
+   padding:10% 0% 4% 0%;
+}
+.blog-content {
+   margin-left: 1%;
+   margin-top: 5%;
+   width: 90%;
+   height: 40vh;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+.special-quote , .quote {
+   font-size: large;
+   animation: fadeIn 2s ease forwards;
+   font-family: "Playfair";
+   color:#7B3F00;
+}
+.about-trevor {
+   padding-left: 7%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50%;
+}
+.about-trevor h1{
+   font-size: medium;
+}
+.about-trevor img{
+   margin-top: 7%;
+   width: 90%;
+}
+#noah-trevor img{
+   width: 90%;
+}
+.icon{
+   margin:0% 43% ;
+   width: 10%;
+   font-size: 1em;
+   display: flex;
+   gap: 25%;
+   justify-content: space-around;
+}
+}
+
+@media only screen and (max-width:375px){
+   #menu nav a{
+      font-size: 15px;
    }
-   .why-this-title-content p{
-      font-size: small;
-        height: 10vh;
-        width: 100vw;
-   }
-   .why-this-title-content h1{
-       font-size: medium;
-       width:100vw;
-       height:7vh;
-   }
-   .why-this-title img {
-      margin-top:60%;
-      width: 65vw;
-      height: 30vh;
-      padding-left: 17%;
-   }
-   .response {
-      display: none;
-   }
-   .personal-blog {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-   }
-   .personal-blog-content {
-      padding-top: 2%;
-      line-height: 33px;
-      display: none;
-      opacity: 0;
-      height: 100vh;
-      flex-wrap: wrap;
-      transition: opacity 0.5s ease-in-out;
-   }
-   #personal-reflection p{
-      width: 100%;
-   }
+#read{
+   margin-top: 2%;
+}
+.why-this-title h1{
+   font-size: medium;
+   height: 6vh;
+}
+.why-this-title img{
+   margin-top: 53%;
+}
+#personal-reflection img {
+   box-shadow:1px 9px 15px #a3a4a5;
+   position: absolute;
+   right: 10%;
+    top: 65%;
+   height: 40vh;
+   width: 80%;
+   border: none;
+}
+#personal-reflection {
+   height: 120vh;
+   display: flex;
+   flex-direction: column;
+   margin-top: 4%;
+}
+#personal-reflection p{
+   width: 100%;
+}
+
+.about-trevor img{
+   margin-top: 7%;
+   width: 70%;
+}
+#noah-trevor img{
+   width: 95%;
+}
+}
+@media only screen and (max-width:414px){
    #personal-reflection img {
       box-shadow:1px 9px 15px #a3a4a5;
       position: absolute;
-      right: 6%;
-       top: 40%;
-      height: 4vh;
-      width: 5vw;
-      border: none;
-    
-   }
-   .blog-content {
-      margin-left: 1%;
-      margin-top: 5%;
-      width: 100%;
-      height: 100vh;
-   }
-
-   #intro {
-      width: 90%;
-   }
-   
-   #intro img {
-      margin-left: 15%;
-      width: 75%;
-   }
-   
-   .navigation {
-      background-color: #E0E1DD;
-      width: 100%;
-      padding-top: 2%;
-
-      display: flex;
-      flex-direction: column;
-   }
-   
-   .navigation a {
-      color: #111224;
-      text-decoration: none;
-      cursor: pointer;
-      line-height: 90px;
-      /* display: flex; */
-      font-size: 1.1em;
-      flex-direction: column;
-   }
-   
-   #reflection-thought {
-      width: 90%;
-      padding: 0%;
-      position: relative;
-      height: 60vh;
-   
-   }
-   
-
-   #menu {
-      position: fixed;
-      top: -1%;
-      right: 0;
-      height: 100vh;
-      width: 30%;
-      background-color: #E0E1DD;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transform: translateX(100%);
-      transition: transform 0.4s ease;
-      z-index: 1000;
-   }
-   
-   #personal-reflection img {
-      margin-left: 25%;
-      width: 40vw;
-      height:40vh;
-   }
-   
-   .about-trevor {
-   
-      padding-left: 7%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10%;
-   }
-   #about-trevor{
-      margin-top: 25vh;
-   }
-   .about-trevor img {
-      margin-top: 2%;
-      width: 40vw;
+      right: 10%;
+       top: 60%;
       height: 30vh;
-   }
-   #noah-trevor{
-      width: 85vw;
-   }
-   .greater {
-      right: 25%;
-      cursor: pointer;
-      top: 110%;
-   }
-   
-   .less {
-      cursor: pointer;
-      top: 110%;
-      right: 35%;
+      width: 80%;
+      border: none;
    }
    #personal-reflection {
+      height: 85vh;
       display: flex;
       flex-direction: column;
-   }
-   
-   #personal-reflection img {
-      width: 55vw;
-   }
-   input {
-      border: none;
-      border-radius: 12px;
-      padding: 3%;
-      margin: 1% 2%;
-   }
-   footer {
       margin-top: 4%;
-      padding: 1%;
-      background-color: #1B1B1B;
-      text-align: center;
-      color: white;
-      font-size: small;
    }
-   #reflection-thought {
-      width: 90%;
-      padding: 0%;
-      position: relative;
-     overflow:scroll;
-      span {
-         font-size: xx-large;
-         position: absolute;
-   
-      }
+   #personal-reflection p{
+      width: 100vw;
    }
-   
-   
+   .icon{
+      font-size: medium;
+   }
 }
-
 @media only screen and (min-width:751px) and (max-width:999px){
    .home h2 {
 
@@ -703,7 +644,7 @@ h2{
       }
    }
    #personal-reflection {
-      border: solid ;
+
       height: 20vh;
       overflow: scroll;
       display: flex;
@@ -758,5 +699,188 @@ h2{
       display: block;
       height: 40vh;
    }
+   .icon{
+      font-size: medium;
+   }
 }
+@media only screen and (max-width:768px){
+   body{
+      margin: auto;
+   }
+   .home {
+      text-align: center;
+      position: relative;
+      height: 100vh;
+      border-bottom: solid 1px black;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/612619528/photo/hippie-woman-stroll-on-mountain.jpg?s=612x612&w=0&k=20&c=itnF_PSwxpOZGwi6_bEN217prgXIKNNN2UZzIpYLsNk=);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 105vw;
+   }
+   #menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 45%;
+   }
+   #menu nav a{
+      font-size: 20px;
+   }
+   .why-this-title h1{
+      font-size:50px;
+      height: 6vh;
+   }
+   .navigation {
+      margin: 1%;
+      width: 100%;
+      text-align: center;
+      padding:10% 0% 4% 0%;
+   }
 
+   #personal-reflection img {
+     top: 65%;
+      height: 35vh;
+      width: 35vw;
+   }
+   #personal-reflection p{
+      width: 100%;
+   }
+   .about-trevor img{
+      margin-top: 7%;
+      width: 60%;
+   }
+   #noah-trevor img{
+      width: 80%;
+   }
+ 
+}
+@media only screen and (max-width:820px){
+   .home {
+      text-align: center;
+      position: relative;
+      height: 100vh;
+      border-bottom: solid 1px black;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/612619528/photo/hippie-woman-stroll-on-mountain.jpg?s=612x612&w=0&k=20&c=itnF_PSwxpOZGwi6_bEN217prgXIKNNN2UZzIpYLsNk=);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 105vw;
+   }
+   .why-this-title h1{
+      font-size: 50px;
+   }
+   .navigation {
+      margin: 1%;
+      width: 100%;
+      text-align: center;
+      padding:10% 0% 4% 0%;
+   }
+   .personal-blog p {
+      font-size: 20px;
+   }
+   .about-trevor img {
+     width: 60%;
+   }
+   .icon{
+      font-size: medium;
+   }
+   #noah-trevor img{
+      width: 80%;
+   }
+   #menu {
+      width: 55%;
+   }
+}
+@media only screen and (max-width:1024px){
+   body{
+      font-size: medium;
+   }
+   #menu {
+      width: 50%;
+   }
+  audio{
+   margin-top: 30%;
+  }
+  #read{
+   padding: 2%;
+   font-size: xx-large;
+  }
+  .why-this-title{
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+  }
+  .why-this-title h1{
+   margin-left: -22%;
+   width: 120vw;
+   font-size:60px;
+  }
+  .why-this-title-content p{
+   width: 100vw;
+  }
+  .personal-blog {
+   width: 100%;
+   height: 75vh;
+   display: flex;
+ flex-direction: column;
+}
+.navigation{
+   width: 100%;
+}
+#personal-reflection img {
+   top: 120%;
+    height: 20vh;
+   width: 35vw;
+ }
+ #personal-reflection p{
+    width: 100vw;
+ }
+ .about-trevor img{
+   width: 80%;
+   margin-top: 3%;
+  height: 60vh;
+ }
+ #noah-trevor img{
+width: 100%;
+ }
+ .icon{
+   font-size: medium;
+ }
+ .about-trevor {
+   padding-left: 7%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10%;
+}
+}
+@media only screen and (max-width:540px){
+   body{
+      font-size: small;
+   }
+   .home h2{
+font-size: large;
+   }
+   #read{
+      padding: 2%;
+      font-size: large;
+     }
+     .why-this-title p{
+      padding-left: 1%;
+      width: 100vw;
+     }
+     .why-this-title h1{
+width: 110vw;
+font-size: xx-large;
+     }
+     .personal-blog {
+      width: 100%;
+      height: 155vh;
+      display: flex;
+    flex-direction: column;
+   }
+   #personal-reflection img {
+      left: 32%;
+       height: 30vh;
+      width: 55vw;
+    }
+}
