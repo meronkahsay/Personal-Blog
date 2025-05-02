@@ -8,44 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4218768d2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon"  href="https://t3.ftcdn.net/jpg/03/16/86/98/360_F_316869849_oHD2qOXRJlZE2Md6SNv0MtvDcgZyHkfv.jpg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="header">
-    <span> Meron Teweldemdhin</span>
-        <span id="top">Personal Blog</span>
-        <button id="menu-button">&#9776;</button>
-        <div id="menu">
-            <button id="close-button">&times;</button>
-              <nav>
-                <a href="#home" onclick="closeMenu()">Home</a>
-                <a href="#about-mybook" onclick="closeMenu()">About the book </a>
-                <a href="#blog" onclick="closeMenu()">Reflective blog page</a>
-                <a href="#about-trevor" onclick="closeMenu()">About Trevor</a>
-                <a href="#contact" onclick="closeMenu()">Get in Touch</a>
-              </nav>
+    <div class="home" id="home">
+        <div class="header">
+            <div id="menu">
+                <button id="close-button">&times;</button>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about-mybook">About the book </a>
+                    <a href="#blog">Reflective blog page</a>
+                    <a href="#about-trevor">About Trevor</a>
+                    <a href="#">Group Review</a>
+                    <a href="#contact">Get in Touch</a>
+                </nav>
+            </div>
+            <img id="logo" src="image-audio/visual (1).svg" alt="logo">
+            <div> Meron Teweldemdhin</div>
+            <div>Personal Blog</div>
+            <button id="menu-button">&#9776;</button>
+           
         </div>
-    </div>
-        <div class="home" id="home">
-        <h1>Born of Her fight</h1>
-        <hr>
-        <h2>Born in broken world. Raised by Unbreakable spirit</h2><br>
+        <h1>Born of Her Fight</h1>
+        <h2>Born in broken world. Raised by Unbreakable spirit</h2>
         <audio controls autoplay>
             <source src="image-audio/Born of her fight.m4a" type="audio/mpeg">
-          </audio><br>
-          <p class="special-quote"><q>Behind every act of survival,there is a woman untold fight</q></p>
-        <!-- <img class="born-a-crime"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXLrYLqi85JnxSVi2xuzwv5xtoYeLK6_RR85Ep6M1L4q79zvvrpOZFOAFRgMvPyU1H-n0&usqp=CAU"><br> -->
+        </audio><br>
+        <p class="special-quote"><q>Behind every act of survival,there is a woman untold fight</q></p>
         <button id="read"><a href="#blog">Read The Reflection</a></button>
 
     </div>
     <div class="why-this-title" id="about-mybook">
-        <div>
-            <h1>Why I Chose This Title</h1>
+        <div class="why-this-title-content">
+            <h1>Why I Choose This Title</h1>
             <p>
                 I chose this title because from the very beginning, Patricia was the reason Trevor was born. She chose
                 to
@@ -62,104 +62,126 @@
         </div>
     </div>
     <div class="personal-blog" id="blog">
-        <div class="navigation">
+        <div class="navigation" id="my-navigation-link">
             <nav>
-                <a href="#intro">Intro</a>
-                <a href="#reflection-thought">Reflection to the qoute</a>
-                <a href="#personal-reflection">Personal reflection</a>
+                <a href="#intro" onclick="showDiv('intro')">Intro</a>
+                <a href="#reflection-thought" onclick="showDiv('reflection-thought')">Reflection to the quote</a>
+                <a href="#personal-reflection" onclick="showDiv('personal-reflection')">Personal reflection</a>
             </nav>
         </div>
-        <div class="blog-content">
-            <div id="blog" class="personal-blog-content">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmu3t0V15p03IpCUkfr3oLvnxQgeeZiqpzKA&s">
+        <div class="blog-content" id="blog-content">
+            <div id="first-page" class="personal-blog-content">
+                <img src="image-audio/feature-4.png.png">
                 <p>
-                    Born a Crime by Trevor Noah is more than a story of growing up in apartheid South Africa; it’s a tribute to survival, hope, and family strength. 
-                    As I explored the pages of his life, I realized that behind every laugh and every struggle, there’s a deeper fight — not just against racism,
-                     but against the chains of limitation.
+                    Born a Crime by Trevor Noah is more than a story of growing up in apartheid South Africa; it’s a
+                    tribute to survival, hope, and family strength.
+                    As I explored the pages of his life, I realized that behind every laugh and every struggle, there’s
+                    a deeper fight — not just against racism,
+                    but against the chains of limitation.
                 </p>
             </div>
-            <div id="intro" class="personal-blog-content">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6iSwxlkBckAobziSXUGTFC3dL-Y54cRaiQ&s">
+            <div id="intro" class="personal-blog-content" style="display: none;">
+                <img src="image-audio/feature-4.png.png">
                 <p>
-                    Born a Crime by Trevor Noah is more than a story of growing up in apartheid South Africa; it’s a tribute to survival, hope, and family strength. 
-                    As I explored the pages of his life, I realized that behind every laugh and every struggle, there’s a deeper fight — not just against racism,
-                     but against the chains of limitation.
+                    Born a Crime by Trevor Noah is more than a story of growing up in apartheid South Africa; it’s a
+                    tribute to survival, hope, and family strength.
+                    As I explored the pages of his life, I realized that behind every laugh and every struggle, there’s
+                    a deeper fight — not just against racism,
+                    but against the chains of limitation.
                 </p>
             </div>
-        <div id="reflection-thought" class="personal-blog-content">
-            <p class="quote">"Abel wanted a traditional marriage with a traditional wife…
-                but he never fell in love with subservient women… 'He only wants a woman who is free because his dream
-                is to put her in a cage.'”
-            </p>
-            Response to this quote: <button id="display-response"> <i class="fa fa-caret-down"></i> </button>
-            <div id="response-to-quote" class="hidden">
-                <div class="response  active" id="responseOne">
-                    <p>The quote, “He only wants a woman who is free because his dream is to put her in a cage,” really
-                        hit me—especially when
-                        I read the part in Born a Crime where Abel beats Patricia. It broke my heart.What's worse is
-                        that this isn't
-                        just something from the past. Even today, many women still go through the same kind of pain,
-                        silently. In my own life, I've seen it. I've talked with friends who seem strong on the outside, but deep
-                        down, they don't believe in their own strength.  Continue ...
-                    </p>
-                    <button  id="nextPageOne"><span class="greater">&gt;</span></button>
-                </div>
-                <div class="response" id="responseTwo">
-                    <button id="previouspageTwo"> <span class="less">&lt;</span></button>
-                    <p> When they're hurt or controlled by someone they love, they stay quiet. They say things like,
-                        “Maybe he'll change” or “I don't want to ruin the relationship.”
-                        It's like they're stuck between being strong and being what society expects from a “good” woman.
-                        This quote makes me think about how gender roles still affect relationships today.
-                        Some men say they love confident, independent women—but when they're actually with one, they
-                        feel the need to control her. It's unfair and painful to see.
-                        A relationship should never be about power or fear.Continue ...
-                    </p>
-                    <button id="nextPageTwo"><span class="greater">&gt;</span></button>
-                </div>
-                <div class="response" id="responseThree">
-                    <button id="previouspageThree"><span class="less">&lt;</span></button>
-                    <p>When I read about Patricia, I saw someone who refused to be caged. That gives me strength.
-                        It also makes me feel angry—angry at how many women still suffer in silence. But that anger
-                        pushes me.
-                        It motivates me to work harder, to use my voice, and to support the women around me—my friends,
-                        my sisters, and even strangers—so that no one feels alone in their fight.
-                        <p class="special-quote"><q>We deserve to be free. Not just free to speak—but free to live, love, and be
-                            respected without fear.</q></p>
-                    </p>
+            <div id="reflection-thought" class="personal-blog-content" style="display: none;">
+                <p class="quote">"Abel wanted a traditional marriage with a traditional wife…
+                    but he never fell in love with subservient women… 'He only wants a woman who is free because his
+                    dream
+                    is to put her in a cage.'”
+                </p>
+                Response to this quote: <button id="display-response"> <i class="fa fa-caret-down"></i> </button>
+                <div id="response-to-quote" class="hidden">
+                    <div class="response  active" id="responseOne">
+                        <p>The quote, “He only wants a woman who is free because his dream is to put her in a cage,”
+                            really
+                            hit me—especially when
+                            I read the part in Born a Crime where Abel beats Patricia. It broke my heart.What's worse is
+                            that this isn't
+                            just something from the past. Even today, many women still go through the same kind of pain,
+                            silently. In my own life, I've seen it. I've talked with friends who seem strong on the
+                            outside, but deep
+                            down, they don't believe in their own strength. Continue ...
+                        </p>
+                        <button id="nextPageOne"  class="greater"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="response" id="responseTwo">
+                        <button id="previouspageTwo" class="less"><i class="fa-solid fa-arrow-left"></i></button>
+                        <p> When they're hurt or controlled by someone they love, they stay quiet. They say things like,
+                            “Maybe he'll change” or “I don't want to ruin the relationship.”
+                            It's like they're stuck between being strong and being what society expects from a “good”
+                            woman.
+                            This quote makes me think about how gender roles still affect relationships today.
+                            Some men say they love confident, independent women—but when they're actually with one, they
+                            feel the need to control her. It's unfair and painful to see.
+                            A relationship should never be about power or fear.Continue ...
+                        </p>
+                        <button id="nextPageTwo"  class="greater"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="response" id="responseThree">
+                        <button id="previouspageThree" class="less"><i class="fa-solid fa-arrow-left"></i></button>
+                        <p>When I read about Patricia, I saw someone who refused to be caged. That gives me strength.
+                            It also makes me feel angry—angry at how many women still suffer in silence. But that anger
+                            pushes me.
+                            It motivates me to work harder, to use my voice, and to support the women around me—my
+                            friends,
+                            my sisters, and even strangers—so that no one feels alone in their fight.
+                        <p class="special-quote"><q>We deserve to be free. Not just free to speak—but free to live,
+                                love, and be
+                                respected without fear.</q></p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="personal-reflection" class="personal-blog-content">
-            <p>While I deeply admire Patricia’s courage and her unbreakable love for her son, one question still lingers in my mind: why do so many women stay with men who hurt them? Even when Trevor begged his mother to leave, she remained — holding on, hoping, surviving. Eventually, she found her way out and reclaimed her life, but I couldn’t help feeling a sense of disappointment and sadness. It’s a pattern I continue to see around me today — strong women, chained not by weakness, but by hope, fear, or love. It made me realize that leaving is not always a simple choice, even when staying costs so much. Their battles are silent, but their strength is undeniable.</p>
-           <div> <img src="image-audio/personal flex.jpg"></div>
+            <div id="personal-reflection" class="personal-blog-content" style="display: none;">
+                  <img src="image-audio/image sticker.png">
+             <p>While I deeply admire Patricia’s courage and her unbreakable love for her son, one question still
+                    lingers in my mind: why do so many women stay with men who hurt them? Even when Trevor begged his
+                    mother to leave, she remained — holding on, hoping, surviving. Eventually, she found her way out and
+                    reclaimed her life, but I couldn’t help feeling a sense of disappointment and sadness. It’s a
+                    pattern I continue to see around me today — strong women, chained not by weakness, but by hope,
+                    fear, or love. It made me realize that leaving is not always a simple choice, even when staying
+                    costs so much. Their battles are silent, but their strength is undeniable.</p>
+            </div>
         </div>
     </div>
-    </div>
-
     <div id="about-trevor">
-
+        <h1>Trevor Noah</h1>
+        <div class="about-trevor">
+            <img src="image-audio/images.jpeg">
+           <div id="noah-trevor"> <img src="image-audio/trevor-noah-Emmy-Win.webp"><p>Trever Noah is one of the most successful comedians in the world and was the host of the Emmy Award-winning “The Daily Show” on Comedy Central for seven years.</p></div>
+            <img src="image-audio/middle.jpeg">
+        </div>
     </div>
     <footer id="contact">
-        <p>Get in Touch</p>
-        <h1>CONTACT ME</h1>
+        <p>Contact Me<p>
         <hr id="first-line">
-        <input placeholder="Enter your Email" type="email"><input type="submit" value="Submit">
-        <i id="face-book"></i><i id="instagram"></i>
+        <input placeholder="Enter your Email" type="email" id="email"><input type="submit" value="Submit">
+        <div class="icon">
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        <i id="facebook" class="fa-brands fa-facebook-f"></i><i id="instagram" class="fa-brands fa-instagram"></i>
+    </div>
         <hr>
-        <p>Meron&copy.All rights reserved.</p>
+        <p><i class="fa-solid fa-face-smile"></i>2025 Personal Blog Made by Meron&copy.All rights reserved.</p>
     </footer>
     <script>
-       const menuBtn = document.getElementById('menu-button');
-const sideNav = document.getElementById('menu');
-const closeBtn = document.getElementById('close-button');
+        const menuBtn = document.getElementById('menu-button');
+        const sideNav = document.getElementById('menu');
+        const closeBtn = document.getElementById('close-button');
 
-menuBtn.addEventListener('click', () => {
-  sideNav.classList.add('show');
-});
+        menuBtn.addEventListener('click', () => {
+            sideNav.classList.add('show');
+        });
 
-closeBtn.addEventListener('click', () => {
-  sideNav.classList.remove('show');
-});
+        closeBtn.addEventListener('click', () => {
+            sideNav.classList.remove('show');
+        });
 
 
         document.getElementById('display-response').addEventListener('click', function () {
@@ -184,7 +206,26 @@ closeBtn.addEventListener('click', () => {
         document.getElementById('previouspageTwo').addEventListener('click', () => {
             showPage('responseTwo', 'responseOne')
         })
+    
+function showDiv(divId) {
+  document.getElementById('first-page').style.display = 'none';
 
+  const divs = document.querySelectorAll('#blog-content .personal-blog-content:not(#first-page)');
+  divs.forEach(div => {
+    div.style.display = 'none';
+  });
+
+  document.getElementById(divId).style.display = 'block';
+}
+
+function goBackToFirst() {
+  const divs = document.querySelectorAll('#blog-content .personal-blog-content:not(#first-page)');
+  divs.forEach(div => {
+    div.style.display = 'none';
+  });
+
+  document.getElementById('first-div').style.display = 'block';
+}
     </script>
 
 </body>
