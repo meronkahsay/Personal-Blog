@@ -377,10 +377,21 @@ hr {
 
 
 @media only screen and (max-width:750px) {
-   
+.home{
+
+   line-height: 3;
+}
 .home h1 {
-   font-size: 20px;
+  
+   font-size: 15px;
    animation: fadeIn 2s ease forwards;
+}
+.home h2{
+   font-size: 5px;
+}
+h2{
+   font-size: 10px;
+  
 }
 .header {
    padding-top: 2.5%;
@@ -418,6 +429,9 @@ hr {
    z-index: 1001;
    position: relative;
 }
+.special-quote{
+   font-size: 20px;
+}
    #menu nav a {
       color: #0D1B2A;
       text-decoration: none;
@@ -441,11 +455,14 @@ hr {
         width: 100vw;
    }
    .why-this-title-content h1{
-        width: 100vw;
+       font-size: medium;
+       width:100vw;
+       height:7vh;
    }
    .why-this-title img {
+      margin-top:60%;
       width: 65vw;
-      height: 35vh;
+      height: 30vh;
       padding-left: 17%;
    }
    .response {
@@ -463,9 +480,22 @@ hr {
       display: none;
       opacity: 0;
       height: 100vh;
+      flex-wrap: wrap;
       transition: opacity 0.5s ease-in-out;
    }
-   
+   #personal-reflection p{
+      width: 100%;
+   }
+   #personal-reflection img {
+      box-shadow:1px 9px 15px #a3a4a5;
+      position: absolute;
+      right: 6%;
+       top: 40%;
+      height: 4vh;
+      width: 5vw;
+      border: none;
+    
+   }
    .blog-content {
       margin-left: 1%;
       margin-top: 5%;
@@ -484,9 +514,11 @@ hr {
    
    .navigation {
       background-color: #E0E1DD;
-      width: 50%;
-      padding-top: 7%;
-      padding-left: 25%;
+      width: 100%;
+      padding-top: 2%;
+
+      display: flex;
+      flex-direction: column;
    }
    
    .navigation a {
@@ -494,7 +526,7 @@ hr {
       text-decoration: none;
       cursor: pointer;
       line-height: 90px;
-      display: flex;
+      /* display: flex; */
       font-size: 1.1em;
       flex-direction: column;
    }
@@ -507,13 +539,7 @@ hr {
    
    }
    
-   #personal-reflection {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      font-size: 15px;
-     
-   }
+
    #menu {
       position: fixed;
       top: -1%;
@@ -532,18 +558,19 @@ hr {
    
    #personal-reflection img {
       margin-left: 25%;
-      width: 50vw;
+      width: 40vw;
       height:40vh;
    }
    
    .about-trevor {
+   
       padding-left: 7%;
       display: flex;
       flex-wrap: wrap;
       gap: 10%;
    }
    #about-trevor{
-      margin-top: 6vh;
+      margin-top: 25vh;
    }
    .about-trevor img {
       margin-top: 2%;
