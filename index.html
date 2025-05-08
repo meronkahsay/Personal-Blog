@@ -165,7 +165,7 @@
     <footer id="contact">
         <p>Contact Me<p>
         <hr id="first-line">
-        <input placeholder="Enter your Email" type="email" id="email"><input type="submit" value="Submit">
+        <input placeholder="Enter your Email" type="email" id="email"><input onclick="myFunction()" type="submit" value="Submit">
         <div class="icon">
             <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
         <i id="facebook" class="fa-brands fa-facebook-f"></i><i id="instagram" class="fa-brands fa-instagram"></i>
@@ -173,6 +173,13 @@
         <hr>
         <p><i class="fa-solid fa-face-smile"></i>2025 Personal Blog Made by Meron&copy.All rights reserved.</p>
     </footer>
+   
+
+<script>
+function myFunction() {
+  alert("Thank you for submitting! We will get back to you soon.");
+}
+</script>
     <script>
         const menuBtn = document.getElementById('menu-button');
         const sideNav = document.getElementById('menu');
